@@ -79,7 +79,7 @@ Replace `HiddenApiBypass` with `LSPass` if you do not want to use `Unsafe`.
     var ctor = HiddenApiBypass.getDeclaredConstructor(ClipDrawable.class /*, args */);
     var method = HiddenApiBypass.getDeclaredMethod(ApplicationInfo.class, "getHiddenApiEnforcementPolicy" /*, args */);
     ```
-1. Add a class to exemption list:
+1. Add a class to exemption list: 
     ```java
     HiddenApiBypass.addHiddenApiExemptions(
         "Landroid/content/pm/ApplicationInfo;", // one specific class
